@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: aa1e680029fd8884782354da33dade7f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - die_animation: {instanceID: 0}
+  - rb: {instanceID: 0}
+  - owner: {instanceID: 0}
+  - prefab_explosion: {fileID: 4704412777828244163, guid: cec1760c1f8483f4e9fe475259464594,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
