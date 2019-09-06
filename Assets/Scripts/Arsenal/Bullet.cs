@@ -13,16 +13,6 @@ public class Bullet : Shell
     {
         Rotate();               //Разворачиваем снаряд по направлению его движения
         Stretch();              //Растягиваем его в соответствии с его скоростью
-        //Try_Force_Destroy();    //Если снаряд слишком медленно, разрушаем его
-    }
-
-    /// <summary> Если снаряд слишком медленный, разрушаем его </summary>
-    void Try_Force_Destroy()
-    {
-        if(rb.velocity.magnitude < 0.1f)
-        {
-            Destroy(gameObject);
-        }
     }
 
     /// <summary> Растягивает пулю. Чем больше скорость, тем длиннее она становится. </summary>
@@ -77,7 +67,7 @@ public class Bullet : Shell
         return Find_Target(go);
     }
 
-    /// <summary> Находим скрипт уничтожаемого объекта среди родителей указанного коллайдера </summary>
+    /// <summary> Находим скрипт уничтожаемого объекта среди родителей указанного игрового объекта </summary>
     Destructable_Object Find_Target(GameObject go)
     {
         Destructable_Object target;
